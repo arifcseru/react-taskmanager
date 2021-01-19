@@ -1,0 +1,114 @@
+[{
+    "id": "1",
+    "sprintName": "To Do",
+    "filteredByAttr": "stateForDisplay",
+    "filteredByValue": {
+        "actualValue": "Column 1",
+        "displayValue": "Column 1"
+    },
+    "tasks": [{
+        "id": 1,
+        "parentId": 1,
+        "taskTitle": "Task 1",
+        "dueDate": "05/12/2020",
+        "status": "Planned"
+    }, {
+        "id": 2,
+        "parentId": 1,
+        "taskTitle": "Task 2",
+        "dueDate": "05/12/2020",
+        "status": "Planned"
+    }, {
+        "id": 21,
+        "parentId": 1,
+        "taskTitle": "Task 21",
+        "dueDate": "05/12/2020",
+        "status": "Planned"
+    }, {
+        "id": 22,
+        "parentId": 1,
+        "taskTitle": "Task 22",
+        "dueDate": "05/12/2020",
+        "status": "Planned"
+    }],
+
+    "filteredCount": 0
+}, {
+    "id": "2",
+    "sprintName": "In Progress",
+    "filteredByAttr": "stateForDisplay",
+    "filteredByValue": {
+        "actualValue": "Column 2",
+        "displayValue": "Column 2"
+    },
+    "tasks": [{
+        "id": 3,
+        "parentId": 2,
+        "taskTitle": "Task 3",
+        "dueDate": "05/12/2020",
+        "status": "In Work"
+    }],
+    "filteredCount": 0
+}, {
+    "id": "3",
+    "sprintName": "In Verification",
+    "filteredByAttr": "stateForDisplay",
+    "filteredByValue": {
+        "actualValue": "Column 3",
+        "displayValue": "Column 3"
+    },
+    "tasks": [{
+        "id": 4,
+        "parentId": 3,
+        "taskTitle": "Task 4",
+        "dueDate": "05/12/2020",
+        "status": "Testing"
+    }, {
+        "id": 5,
+        "parentId": 3,
+        "taskTitle": "Task 5",
+        "dueDate": "05/12/2020",
+        "status": "Testing"
+    }, {
+        "id": 6,
+        "parentId": 3,
+        "taskTitle": "Task 6",
+        "dueDate": "05/12/2020",
+        "status": "Testing"
+    }],
+    "filteredCount": 0
+}, {
+    "id": "4",
+    "sprintName": "Done",
+    "filteredByAttr": "stateForDisplay",
+    "filteredByValue": {
+        "actualValue": "Column 4",
+        "displayValue": "Column 4"
+    },
+    "tasks": [{
+        "id": 7,
+        "parentId": 4,
+        "taskTitle": "Task 7",
+        "dueDate": "05/12/2020",
+        "status": "Completed"
+    }, {
+        "id": 8,
+        "parentId": 4,
+        "taskTitle": "Task 8",
+        "dueDate": "05/12/2020",
+        "status": "Completed"
+    }, {
+        "id": 9,
+        "parentId": 4,
+        "taskTitle": "Task 9",
+        "dueDate": "05/12/2020",
+        "status": "Completed"
+    }, {
+        "id": 10,
+        "parentId": 4,
+        "taskTitle": "Task 10",
+        "dueDate": "05/12/2020",
+        "status": "Completed"
+    }],
+    "filteredCount": 0
+}]

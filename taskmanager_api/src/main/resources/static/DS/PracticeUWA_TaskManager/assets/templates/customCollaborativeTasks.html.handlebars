@@ -1,0 +1,87 @@
+<div id="allTasks" class="collaborative-tasks tasks-stateForDisplay wide" style="height: 556px;">
+    <style id="respColumnWidth">
+        .column.details-tasks.off {
+            transition: width 0.3s ease-in-out;
+        }
+
+        .column {
+            width: 33.333333333333336%;
+            min-width: 256px;
+            max-width: 350px;
+        }
+
+        .columns-carrier {
+            max-width: calc(3 * 350px);
+        }
+
+        .collaborative-tasks-content .alert:not(.alert-fullwidth) {
+            width: calc(33.333333333333336% - 4px);
+        }
+    </style>
+    <div class="collaborative-tasks-head">
+        <div class="toolbar-container">
+            <div class="toolbar-group add-actions">
+                <div class="toolbar add-button">
+                    <button class="btn btn-primary"><span class="fonticon fonticon-plus"></span></button>
+                </div>
+                <div class="toolbar add-field" id="addTaskDropZone">
+                    <div id="addExpandedTaskDiv" class="ds-dialog fluid-width showCancelHideClose visible">
+                        <div class="body">
+                            <div class="form form-vertical">
+                                <div class="form-group">
+                                    <div class="field-group">
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group">
+                                                <div class="input-element">
+                                                    Task Title: <textarea id="addExpandedTaskText" class="form-control" rows="3" placeholder="Create a task..." tabindex="-1"></textarea>
+                                                    Due Date: <input type="date" id="dueDate" class="form-control" placeholder="Due Date"/>
+                                                    Task Status: 
+                                                    <select id="status" class="form-control">
+                                                        <option value="1">To Do</option>
+                                                        <option value="2">In Progress</option>
+                                                        <option value="3">Done</option>
+                                                        <option value="4">In Verification</option>
+                                                    </select>
+                                                    <span class="form-control-error-text"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="collab-space" title="Collaborative Space: Default">
+                                <button id="addTask" class="btn btn-primary">Add</button>
+                                <button id="addAndOpenTask" class="btn btn-default">Add and Open</button>
+                                <button id="closeCreateTask" class="btn btn-default">Close</button>
+                                <button id="cancelCreateTask" class="btn btn-default">Cancel</button>
+                            </div>
+                            <div class="actions">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="collaborative-tasks-content">
+        <div class="alert alert-root"></div>
+        <div class="columns-carrier" style="left: 0%;">
+            <div id="DetailsPanelView" class="column ds-dialog property-panel off">Hello</div>
+        </div>
+        <button class="btn scroll-left tsk-scroll" style="display: none;"><span class="fonticon fonticon-left-open"></span></button>
+        <button class="btn scroll-right tsk-scroll" style="display: none;"><span class="fonticon fonticon-right-open"></span></button>
+        <div class="pagination">
+            <ul>
+                <li class="in-view"></li>
+                <li class="in-view"></li>
+                <li class="in-view"></li>
+            </ul>
+        </div>
+    </div>
+</div>
