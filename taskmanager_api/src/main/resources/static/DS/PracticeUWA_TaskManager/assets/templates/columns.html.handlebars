@@ -1,0 +1,20 @@
+    <div class="header">
+        <div class="title">
+            <span class="thumbnail profile-image"></span>
+            <label>{{sprintName}}<span class="object-count">({{tasks.length}})</span></label>
+        </div>
+    </div>
+
+    <div class="body ui-droppable">
+
+        <div class="cards task-list  scroller scroller-root" unselectable="on" style="user-select: none; overflow: hidden;">
+            <div class="no-native-scrollbars  scroller-content" style="right: -19px; bottom: -19px;">
+                <div class="card drop-target-marker">
+                    <label>Drop Here</label>
+                </div>
+                <div class="top-buffer" style="height: 0px;"></div>
+                <div class="cards-carrier"></div>
+                <div class="bottom-buffer" style="height: 0px;"></div>
+            </div>
+        </div>
+    </div>

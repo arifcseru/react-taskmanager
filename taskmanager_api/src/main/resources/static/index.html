@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Collaborative Tasks</title>
+    <link rel="stylesheet" type="text/css" href="//uwa.netvibes.com/lib/c/UWA/assets/css/standalone.css" />
+    <link href="css/CollaborativeTasks.css" rel="stylesheet" id="collaborative-tasks-css">
+    <style type="text/css">
+        .module {
+            margin: 20px auto;
+            height: auto;
+            width: 100% !important;
+            min-width: 320px;
+            border: 1px solid #79A7E2;
+            background: #FFF;
+        }
+    </style>
+    <script type="text/javascript" src="//uwa.netvibes.com/lib/c/UWA/js/UWA_Standalone_Alone.js"></script>
+    <script type="text/javascript" src="node_modules/requirejs/require.js"></script>
+    <script type="text/javascript">
+        define('Current/views/MainView', [
+            'DS/PracticeUWA_TaskManager/assets/views/FoundationBaseView',
+            'DS/PracticeUWA_TaskManager/assets/models/TaskModel',
+            'DS/PracticeUWA_TaskManager/assets/collections/TasksCollection',
+            'DS/PracticeUWA_TaskManager/assets/views/CustomCollaborativeTasksView',
+            'UWA/Controls/Drag',
+            'UWA/Element',
+            'DS/Handlebars/Handlebars',
+            "text!DS/PracticeUWA_TaskManager/assets/templates/customCollaborativeTasks.html.handlebars"
+        ], function(FoundationBaseView, TaskModel, TasksCollection, CustomCollaborativeTasksView, Drag, Element, Handlebars, mainTemplate) {
+            'use strict';
+            var compiledScript = Handlebars.compile(mainTemplate);
+            var MainView = FoundationBaseView.extend({
+                id: function() {
+                    return this.cid;
+                },
+                setup: function() {
+                    console.log('Main View Initiated!');
+                },
+                render: function() {
+                    var customCollaborativeTasksView = new CustomCollaborativeTasksView().render();
+                    console.log(customCollaborativeTasksView.container);
+                    customCollaborativeTasksView.container.inject(this.container);
+                    return this;
+                }
+            });
+            return MainView;
+        });
+
+        require(['Current/views/MainView'], function(MainView) {
+            widget.addEvent('onLoad', function() {
+
+                widget.setBody('');
+                widget.setTitle("Demo Collaborative Tasks");
+                var mainView = new MainView();
+                mainView = mainView.render();
+                console.log(mainView.container);
+                mainView.inject(widget.body);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Loading...</p>
+</body>
+
+</html>

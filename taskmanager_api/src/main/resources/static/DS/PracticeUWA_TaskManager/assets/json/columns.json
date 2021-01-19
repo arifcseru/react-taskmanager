@@ -1,0 +1,41 @@
+[{
+    "id": "1",
+    "sprintName": "To Do",
+    "stateName": "Planned",
+    "filteredByValue": {
+        "actualValue": "Column 1",
+        "displayValue": "Column 1"
+    }
+}, {
+    "id": "2",
+    "sprintName": "In Progress",
+    "stateName": "In Work",
+    "filteredByValue": {
+        "actualValue": "Column 2",
+        "displayValue": "Column 2"
+    }
+}, {
+    "id": "3",
+    "sprintName": "In Verification",
+    "stateName": "Testing",
+    "filteredByValue": {
+        "actualValue": "Column 3",
+        "displayValue": "Column 3"
+    }
+}, {
+    "id": "4",
+    "sprintName": "Done",
+    "stateName": "Completed",
+    "filteredByValue": {
+        "actualValue": "Column 4",
+        "displayValue": "Column 4"
+    }
+}, {
+    "id": "5",
+    "sprintName": "Recyle Bin",
+    "stateName": "Trashed",
+    "filteredByValue": {
+        "actualValue": "Column 5",
+        "displayValue": "Column 5"
+    }
+}]
