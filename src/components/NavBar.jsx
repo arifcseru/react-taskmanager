@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class NavBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link to="/">
+          <NavLink to="/">
             <a className="navbar-brand">Practice React</a>
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,7 +22,7 @@ class NavBar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <Link to="/counters">
+              <NavLink to="/counters">
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page">
                     Counters Management{" "}
@@ -31,33 +31,49 @@ class NavBar extends Component {
                     </span>
                   </a>
                 </li>
-              </Link>
+              </NavLink>
 
-              <Link to="/taskManager">
+              <NavLink to="/products">
+                <li className="nav-item">
+                  <a className="nav-link">
+                    Products
+                  </a>
+                </li>
+              </NavLink>
+              <NavLink to="/taskManager">
                 <li className="nav-item">
                   <a className="nav-link">
                     Task Manager
                   </a>
                 </li>
-              </Link>
-              <li className="nav-item">
-                <a
-                  className="nav-link disabled"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  Admin Panel
-                </a>
-              </li>
+              </NavLink>
             </ul>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 pull-right">
-              <Link to="/logout">
+              <NavLink to="/login">
+                <li className="nav-item">
+                  <a className="nav-link">
+                    Login
+                  </a>
+                </li>
+              </NavLink>
+            </ul>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 pull-right">
+              <NavLink to="/logout">
                 <li className="nav-item">
                   <a className="nav-link">
                     Logout
                   </a>
                 </li>
-              </Link>
+              </NavLink>
+            </ul>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 pull-right">
+              <NavLink to="/registration">
+                <li className="nav-item">
+                  <a className="nav-link">
+                    Registration
+                  </a>
+                </li>
+              </NavLink>
             </ul>
           </div>
         </div>

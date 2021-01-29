@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "First Task",
+    "isCompleted": true,
+    "taskType": "React JS"
+  },
+  {
+    "id": 2,
+    "name": "Second Task",
+    "isCompleted": false,
+    "taskType": "Java"
+  },
+  {
+    "id": 3,
+    "name": "Third Task",
+    "isCompleted": false,
+    "taskType": "Spring Boot"
+  },
+  {
+    "id": 4,
+    "name": "Fourth Task",
+    "isCompleted": false,
+    "taskType": "Spring Boot"
+  },
+  {
+    "id": 5,
+    "name": "Fifth Task",
+    "isCompleted": true,
+    "taskType": "Spring Boot"
+  },
+  {
+    "id": 6,
+    "name": "Sixth Task",
+    "isCompleted": false,
+    "taskType": "Refactoring"
+  },
+  {
+    "id": 7,
+    "name": "Seventh Task",
+    "isCompleted": true,
+    "taskType": "Refactoring"
+  }
+]

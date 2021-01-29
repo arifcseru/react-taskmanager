@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "price": "23.3",
+    "category": "Test Category",
+    "name": "First Product",
+    "description": "Product Details",
+    "liked": false
+  },
+  {
+    "id": 2,
+    "price": "23.3",
+    "category": "Test Category",
+    "name": "Second Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 3,
+    "price": "23.3",
+    "category": "Test Category",
+    "name": "Third Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 4,
+    "price": "23.3",
+    "category": "Stationary",
+    "name": "Fourth Product",
+    "description": "Product Details",
+    "liked": false
+  },
+  {
+    "id": 5,
+    "price": "23.3",
+    "category": "Fruit",
+    "name": "Fifth Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 6,
+    "price": "23.3",
+    "category": "Fruit",
+    "name": "Sixth Product",
+    "description": "Product Details",
+    "liked": false
+  },
+  {
+    "id": 7,
+    "price": "23.3",
+    "category": "Flower",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 8,
+    "price": "23.3",
+    "category": "Fruit",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 9,
+    "price": "23.3",
+    "category": "Garments",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 10,
+    "price": "23.3",
+    "category": "Stationary",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 11,
+    "price": "23.3",
+    "category": "Flower",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 12,
+    "price": "23.3",
+    "category": "Stationary",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 13,
+    "price": "23.3",
+    "category": "Stationary",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 14,
+    "price": "23.3",
+    "category": "Stationary",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 15,
+    "price": "23.3",
+    "category": "Fruit",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 16,
+    "price": "23.3",
+    "category": "Stationary",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 17,
+    "price": "23.3",
+    "category": "Fruit",
+    "name": "Test Fruit",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 18,
+    "price": "23.3",
+    "category": "Stationary",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 19,
+    "price": "23.3",
+    "category": "Garments",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  },
+  {
+    "id": 20,
+    "price": "23.3",
+    "category": "Fruit",
+    "name": "Seventh Product",
+    "description": "Product Details",
+    "liked": true
+  }
+]
