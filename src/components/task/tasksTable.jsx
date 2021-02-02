@@ -6,29 +6,26 @@ class TasksTable extends Component {
   columns = [
     { path: "id", label: "Id" },
     {
-      path: "title",
+      path: "taskTitle",
       label: "Title",
       content: (item) => (
-        <NavLink to={"tasks/" + item.id}>{item.title}</NavLink>
+        <NavLink to={"tasks/" + item.id}>{item.taskTitle}</NavLink>
       ),
     },
     {
-      key: "isCompleted",
-      label: "Is Completed",
-      content: (item) => (
-        <input
-          type="checkbox"
-          defaultChecked={item.completed}
-          onChange={() => this.props.onLikeClick(item)}
-        />
-      ),
+      path: "status",
+      label: "Status",
+    },
+    {
+      path: "dueDate",
+      label: "Due Date",
     },
     {
       key: "delete",
       label: "Delete",
       content: (item) => (
         <button
-          onClick={() => this.props.onDelete(item.id)}
+          onClick={() => this.props.onDelete(item)}
           className="btn btn-danger"
         >
           Delete

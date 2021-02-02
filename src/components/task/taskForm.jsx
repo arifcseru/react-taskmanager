@@ -1,47 +1,43 @@
 import React, { Component } from "react";
+import Form from "../common/Form";
+import { save } from "./taskService";
+import Joi from "joi-browser";
 
-class TaskForm extends Component {
-  state = {};
-  handleSubmit = () => {
-    this.props.history.push("/taskManager");
+class TaskForm extends Form {
+  state = {
+    data: { taskTitle: "",  status: ""},
+    errors: {},
   };
 
+  schema = {
+    taskTitle: Joi.string().required().label("Title"),
+    status: Joi.string().required().label("Status"),
+  };
+
+  doSubmit = async () => {
+    await save(this.state.data);
+    this.props.history.push("/taskManager");
+    console.log("Submitted.");
+  };
+ 
   render() {
+    const { data, errors } = this.state;
     return (
       <React.Fragment>
-        <div className="row">
-          <div className="col-md-3">
-            <form onSubmit={this.handleSubmit}>
-              <div className="mb-3">
-                <label for="name" className="form-label">
-                  Task Name
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  aria-describedby="emailHelp"
-                />
-                {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
-              </div>
-              <div className="mb-3">
-                <label for="description" className="form-label">
-                  Task Description
-                </label>
-                <input type="text" className="form-control" id="description" />
-              </div>
-              <div className="mb-3 form-check">
-                <label className="form-check-label" for="price">
-                  Price
-                </label>
-                <input type="text" className="form-control" id="price" />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
-            </form>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8"></div>
+            <div className="col-md-4">
+              {/* form>(div.form-group>label+input.form-control)*2 */}
+              <form onSubmit={this.handleSubmit}>
+                {this.renderInput("taskTitle", "Title")}
+                {this.renderInput("status", "Status")}
+                {/* {this.renderInput("dueDate", "Due Date")} */}
+
+                <div className="form-group">{this.renderButton("Save")}</div>
+              </form>
+            </div>
           </div>
-          <div className="col-md-6"></div>
         </div>
       </React.Fragment>
     );

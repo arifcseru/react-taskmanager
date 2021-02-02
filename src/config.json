@@ -1,4 +1,4 @@
 {
-  "apiUrl": "https://jsonplaceholder.typicode.com"
+  "apiUrl": "http://localhost:8080/api"
 }
 

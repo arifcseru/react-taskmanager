@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Pagination from "../common/pagination";
 import { paginate } from "../common/paginate";
-import { getAll, getAll as tasks } from "./taskService";
+import { getAll, getAll as tasks, remove } from "./taskService";
 import ListGroup from "../common/listGroup";
 
 // import tasks from "./tasks.json";
@@ -12,21 +12,25 @@ class taskManager extends Component {
   state = {
     categories: ["All Tasks", "React JS", "Java", "Spring Boot", "Refactoring"],
     currentPage: 1,
-    tasks: tasks,
+    tasks: [],
     pageSize: 10,
-    count: tasks.length,
+    count: 0,
     currentItem: "All Tasks",
-    sortColumn: { path: "name", order: "asc" },
+    sortColumn: { path: "taskTitle", order: "asc" },
   };
   async componentDidMount() {
     const { data: tasks } = await getAll();
     this.setState({ tasks });
   }
 
-  handleDelete = (id) => {
-    const tasks = this.state.tasks.filter((task) => task.id !== id);
+
+  handleDelete = (item) => {
+    const tasks = this.state.tasks.filter(m => m._id !== item.id);
     this.setState({ tasks });
+
+    remove(item.id);
   };
+
   loadCreateForm = () => {
     this.props.history.push("/tasks/new");
   };
